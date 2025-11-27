@@ -1,0 +1,30 @@
+{% extends 'common/base.html' %}
+{% block content %}
+
+<!--Edit Page-->
+<section class="editPage">
+    <form>
+        <fieldset>
+            <legend>Delete Album</legend>
+            <div class="container">
+
+                <!-- Form for Deleting an Album -->
+                <label for="name">Album Name:</label>
+                <input id="name" name="name" class="name" type="text" value="In These Silent Days" disabled="" readonly>
+
+                <label for="imgUrl">Image URL:</label>
+                <input id="imgUrl" name="imgUrl" class="imgUrl" type="url"
+                       value="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2021%2F07%2F20%2FBrandiCarlile-AlbumCover-Web.jpg"
+                       disabled readonly>
+
+                <label for="price">Price:</label>
+                <input id="price" name="price" class="price" type="number" value="12.8" disabled="" readonly>
+
+                <!-- Button for Deleting an Album -->
+                <button class="delete-album" type="submit">Delete Album</button>
+            </div>
+        </fieldset>
+    </form>
+</section>
+{% endblock %}
+

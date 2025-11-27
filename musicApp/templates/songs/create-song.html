@@ -1,0 +1,14 @@
+<!--Create Page-->
+<section class="createPage">
+
+    <form method="POST">
+        <fieldset>
+            <legend>Add Album</legend>
+            <div class="container">
+                {{ form }}
+                {% csrf_token %}
+                <button class="add-song" type="submit">Add New Song</button>
+            </div>
+        </fieldset>
+    </form>
+</section>
